@@ -1,4 +1,4 @@
-Now we can point a service to whoami potsed. This works because of kubernetes default labels. If we were to name this service different from the deployment, the selector would not target the correct deployment.
+Now we can point a service to whoami podset. This works because of kubernetes default labels. If we were to name this service different from the deployment, the selector would not target the correct deployment.
 
 ## Create Service
 

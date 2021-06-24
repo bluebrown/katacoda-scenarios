@@ -8,6 +8,6 @@ First we need to start minikube to get the cluster running.
 
 `kubectl get services`{{execute}}
 
-##Set up Alias
+## Set up Alias
 
 `alias k="kubectl"`{{execute}}

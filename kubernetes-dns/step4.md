@@ -2,7 +2,7 @@ Now we will deploy a workload of type job to query the kubernetes nameserver.
 
 ## Deploy Job
 
-`k create job dig --image tutum/dnsutils -- dig +search whoami`{{execute}}
+`k create job dig --image tutum/dnsutils -- bash -c "dig +search whoami && sleep 3600"`{{execute}}
 
 ## Check the Job
 
