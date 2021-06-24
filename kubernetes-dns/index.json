@@ -2,7 +2,7 @@
   "title": "Kubernetes DNS",
   "description": "Hands on examples of Kubernetes DNS resolution",
   "difficulty": "Intermediate",
-  "time": "1h",
+  "time": "15m",
   "details": {
     "steps": [
       {

@@ -4,7 +4,7 @@ Now lets exec into the dig pod to run some more dns query's.
 
 `kubectl exec $pod -ti -- bash`{{execute}}
 
-## Use  nslookup
+## Making DNS Queries
 
 nslookup resolves the service ok
 
