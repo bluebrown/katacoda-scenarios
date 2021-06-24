@@ -1,11 +1,18 @@
-Next, we will deploy a workload of type deployment.
+In this step we create a namespace for our resources and deploye a workload in this namespace.
 
-```yml
+## Creating the Namespace
+
+`kubectl create namespace dev`{{execute}}
+
+### Deploying a Workload
+
+Next, we will deploy a workload of type deployment in the namespace
+
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: whoami-deployment
-  namespace: dev
   labels:
     deployment: whoami
 spec:
@@ -25,4 +32,4 @@ spec:
         - containerPort: 80
 ```
 
-`kubectl apply -f https://raw.githubusercontent.com/bluebrown/katacoda-scenarios/main/kubernetes-dns/assets/whoami-deployment.yml`{{execute}}
+`kubectl apply -n dev -f https://raw.githubusercontent.com/bluebrown/katacoda-scenarios/main/kubernetes-dns/assets/whoami-deployment.yml`{{execute}}
