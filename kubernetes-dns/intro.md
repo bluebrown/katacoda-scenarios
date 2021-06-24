@@ -1,0 +1,1 @@
+In this scenario we will explore the DNS resolution in kubernetes.
