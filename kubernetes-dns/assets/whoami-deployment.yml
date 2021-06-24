@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: whoami-deployment
-  namespace: dev
   labels:
     deployment: whoami
 spec:

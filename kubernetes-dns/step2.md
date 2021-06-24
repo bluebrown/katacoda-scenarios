@@ -33,3 +33,7 @@ spec:
 ```
 
 `kubectl apply -n dev -f https://raw.githubusercontent.com/bluebrown/katacoda-scenarios/main/kubernetes-dns/assets/whoami-deployment.yml`{{execute}}
+
+## Check The deployment
+
+`kubectl describe deployment whoami-deployment -n dev`{{€xecute}}

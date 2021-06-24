@@ -19,3 +19,7 @@ spec:
 ```
 
 `kubectl apply -n dev -f  https://raw.githubusercontent.com/bluebrown/katacoda-scenarios/main/kubernetes-dns/assets/whoami-service.yml`{{execute}}
+
+## Check The Service
+
+`kubectl describe service whoami -n dev`{{€xecute}}
