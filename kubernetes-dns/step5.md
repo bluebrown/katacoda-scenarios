@@ -35,5 +35,3 @@ We can get the same service without `+search` flag when using the FQDN.
 `dig whoami.default.svc.cluster.local`{{execute}}
 
 However, the benefit of using the `search` method it that queries will automatically resolve to resources within the same namespace. This can be useful to apply the same configuration to different environments such as production and development.
-
-Since did not specify a namespace on any of the commands, all resources we have created are bound to the `default` namespace.
