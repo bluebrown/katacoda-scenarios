@@ -1,0 +1,24 @@
+{
+  "title": "Test Scnenario",
+  "description": "This is a test",
+  "difficulty": "Beginner",
+  "time": "5m",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "text": "step1.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {},
+  "backend": {
+    "imageid": "minikube-running"
+  }
+}
