@@ -23,3 +23,12 @@ Since we need the dynamic pod id, we use a query with selector filter and store 
 Now we can check the logs and see the output of the dns query via `dig`
 
 `kubectl logs "$pod"`{{execute}}
+
+We see the output of the dig command. At the top section it is showing `QUERY: 1, ANSWER: 1`. That means we have asked to resolve 1 domain name and we got 1 answer.
+
+Further down in the answer section we see the actual answer including the clusterIp of the whoami service. It will look similar to this.
+
+```shell
+;; ANSWER SECTION:
+whoami.default.svc.cluster.local. 30 IN A       10.102.40.83
+```
