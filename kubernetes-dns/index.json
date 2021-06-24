@@ -1,6 +1,6 @@
 {
   "title": "Kubernetes DNS",
-  "description": "Hands on examples of Kubernetes DNS resolution",
+  "description": "Learn about kubernetes DNS resolution by using dig and nslookup",
   "difficulty": "Intermediate",
   "time": "15m",
   "details": {
