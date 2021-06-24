@@ -11,6 +11,6 @@ spec:
         command: 
           - bash
           - -c
-          - "dig +short +search whoami && sleep 1200"
+          - "sleep 10 && dig +short +search whoami && sleep 1200"
       restartPolicy: Never
   backoffLimit: 4

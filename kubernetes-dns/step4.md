@@ -33,4 +33,4 @@ spec:
 
 ## Checking the Logs
 
-`kubectl logs "$pod" -n dev`{{execue}}
+`kubectl logs "$pod" -n dev`{{execute}}
