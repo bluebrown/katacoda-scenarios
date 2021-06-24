@@ -22,4 +22,4 @@ spec:
 
 ## Check The Service
 
-`kubectl describe service whoami -n dev`{{€xecute}}
+`kubectl describe service whoami -n dev`{{execute}}

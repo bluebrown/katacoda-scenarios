@@ -36,4 +36,4 @@ spec:
 
 ## Check The deployment
 
-`kubectl describe deployment whoami-deployment -n dev`{{€xecute}}
+`kubectl describe deployment whoami-deployment -n dev`{{execute}}

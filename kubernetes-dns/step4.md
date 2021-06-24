@@ -21,6 +21,10 @@ spec:
   backoffLimit: 4
 ```
 
+`kubectl apply -n dev -f  https://raw.githubusercontent.com/bluebrown/katacoda-scenarios/main/kubernetes-dns/assets/dnsutils-job.yml`{{execute}}
+
+## Check the Job
+
 `kubectl describe job dnsutils -n dev`{{execute}}
 
 ## Get the Pod ID
