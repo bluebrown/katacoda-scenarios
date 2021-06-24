@@ -7,3 +7,7 @@ First we need to start minikube to get the cluster running.
 ## Check Cluster
 
 `kubectl get services`{{execute}}
+
+##Set up Alias
+
+`alias k="kubectl"`{{execute}}
