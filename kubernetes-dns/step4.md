@@ -24,7 +24,7 @@ Now we can check the logs and see the output of the dns query via `dig`
 
 `kubectl logs "$pod"`{{execute}}
 
-We see the output of the dig command. At the top section it is showing `QUERY: 1, ANSWER: 1`. That means we have asked to resolve 1 domain name and we got 1 answer. The number of answers means how many records where found by the nameserver. If the domain cant get resolved the answer count will be 0.
+We see the output of the dig command. At the top section it is showing `QUERY: 1, ANSWER: 1`. That means we have asked to resolve 1 domain name and we got 1 answer. The number of answers tells how many records where found and returned by the nameserver. If the domain cant get resolved the answer count will be 0.
 
 Further down in the answer section we see the actual answer including the clusterIp of the whoami service. It will look similar to this.
 
