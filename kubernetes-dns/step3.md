@@ -6,6 +6,6 @@ Now we can point a service to whoami podset. This works because of kubernetes de
 
 ## Check The Service
 
-`kubectl describe service whoami -n dev`{{execute}}
+`kubectl describe service whoami`{{execute}}
 
-Note how the service selector is pointing to the label `app=whoami`. That means it will match the podset from the whoami deployment. In conclusion, when naming the service the same as the deployment, the selector will work without further modification.
+Note how the service `selector` is matching the label `app=whoami`. That means it will match the podset from the whoami deployment. In conclusion, when naming the service the same as the deployment, the selector will work without further modification.
