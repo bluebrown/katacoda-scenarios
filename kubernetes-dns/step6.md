@@ -30,6 +30,13 @@ Now the service-name has been correctly resolved.
 
 We can get the same service without `+search` flag when using the FQDN.
 
-`dig my-app.dev.svc.cluster.local`{{execute}}
+`dig +short my-app.dev.svc.cluster.local`{{execute}}
 
 However, the benefit of using the `search` method it that queries will automatically resolve to resources within the same namespace. This can be useful to apply the same configuration to different environments such as production and development.
+
+The same way the search entry in `resolv.conf` completes the query with the default name space, it will complete any part of the `FQDN` from left to right. So in the below example, it will resolve to the local cluster.
+
+```console
+$ dig +short +search my-app.dev
+10.43.52.98
+```
