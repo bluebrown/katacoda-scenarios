@@ -1,11 +1,11 @@
-Now we can point a service to whoami podset. This works because of kubernetes default labels. If we were to name this service different from the deployment, the selector would not target the correct deployment.
+Next, we run a pod via imperative command
 
-## Create Service
+### Running a Pod
 
-`k create service clusterip whoami --tcp 80`{{execute}}
+`k run my-app --image nginx --namespace dev --port 80`{{execute}}
 
-## Check The Service
+## Describe The Pod
 
-`kubectl describe service whoami`{{execute}}
+`k describe pod my-app -n dev`{{execute}}
 
-Note how the service `selector` is matching the label `app=whoami`. That means it will match the podset from the whoami deployment. In conclusion, when naming the service the same as the deployment, the selector will work without further modification.
+Note the `label` that has been set by kubernetes. `run=nginx` By default kubernetes will set labels that match the resource name. For a pod started from a `run` it will have the form `run=<pod-name>`. For a deployment it would be labeled with `app=<deployment-name>`.
