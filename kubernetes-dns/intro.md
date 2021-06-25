@@ -1,1 +1,1 @@
-In this scenario we will explore the DNS resolution in kubernetes.
+We are going to explore how DNS resolution in Kubernetes works. First we create a `namespace`, then we create a `pod` and `expose` it via `service`. Afterwards, a second `pod` is used to perform DNS queries against the Kubernetes DNS Resolver to get the IP address of the service.
