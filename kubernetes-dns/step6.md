@@ -30,6 +30,6 @@ Now the service-name has been correctly resolved.
 
 We can get the same service without `+search` flag when using the FQDN.
 
-`dig whoami.default.svc.cluster.local`{{execute}}
+`dig my-app.dev.svc.cluster.local`{{execute}}
 
 However, the benefit of using the `search` method it that queries will automatically resolve to resources within the same namespace. This can be useful to apply the same configuration to different environments such as production and development.
