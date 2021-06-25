@@ -36,7 +36,4 @@ However, the benefit of using the `search` method it that queries will automatic
 
 The same way the search entry in `resolv.conf` completes the query with the default name space, it will complete any part of the `FQDN` from left to right. So in the below example, it will resolve to the local cluster.
 
-```console
-$ dig +short +search my-app.dev
-10.43.52.98
-```
+`dig +short +search my-app.dev`{{execute}}
